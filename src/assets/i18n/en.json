@@ -1,0 +1,15 @@
+{
+  "app": {
+    "home": {
+      "title": "Home",
+      "content": "home page works!"
+    },
+    "about": {
+      "title": "About",
+      "content": "about page works!"
+    },
+    "gloab": "Languages",
+    "skin": "Themes",
+    "user": "Admin"
+  }
+}

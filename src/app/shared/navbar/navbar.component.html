@@ -1,0 +1,51 @@
+<header>
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <a class="navbar-brand" [routerLink]="'/'">Vkel UI</a>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/home'" routerLinkActive="active">{{ 'app.home.title' | translate }}</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="'/about'" routerLinkActive="active">{{ 'app.about.title' | translate }}</a>
+        </li> 
+      </ul>
+      <div class="navbar-nav">
+        <div ngbDropdown>
+          <button class="btn btn-link" id="dropdownConfig" ngbDropdownToggle>
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            {{ 'app.gloab' | translate }}
+            </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownConfig">
+            <button class="dropdown-item" (click)="change('chs')">中文</button>
+            <button class="dropdown-item" (click)="change('en')">English</button>
+            <button class="dropdown-item" (click)="change('jp')">日本語</button>
+            <button class="dropdown-item" (click)="change('fr')">français</button>
+          </div>
+        </div>
+        <div ngbDropdown>
+          <button class="btn btn-link" id="dropdownConfig" ngbDropdownToggle>{{ 'app.skin' | translate }}</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownConfig">
+            <button class="dropdown-item">Windows</button>
+            <button class="dropdown-item">Office</button>
+            <button class="dropdown-item">Xbox</button>
+            <button class="dropdown-item">Bing</button>
+          </div>
+        </div>
+        <div ngbDropdown>
+          <button class="btn btn-link" id="dropdownConfig" ngbDropdownToggle>{{ 'app.user' | translate }}</button>
+          <div class="dropdown-menu" aria-labelledby="dropdownConfig">
+            <button class="dropdown-item">Profiles</button>
+            <button class="dropdown-item">Settings</button>
+            <button class="dropdown-item">Security</button>
+            <button class="dropdown-item">Logout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

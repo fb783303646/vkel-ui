@@ -1,0 +1,15 @@
+{
+  "app": {
+    "home": {
+      "title": "Accueil",
+      "content": "La page d'accueil fonctionne!"
+    },
+    "about": {
+      "title": "À propos",
+      "content": "Sur la page fonctionne!"
+    },
+    "gloab": "Langues",
+    "skin": "Thèmes",
+    "user": "Administrateur"
+  }
+}

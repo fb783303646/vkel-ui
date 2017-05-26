@@ -1,0 +1,15 @@
+{
+  "app": {
+    "home": {
+      "title": "首页",
+      "content": "首页工作了！"
+    },
+    "about": {
+      "title": "关于",
+      "content": "关于页工作了！"
+    },
+    "gloab": "语言",
+    "skin": "主题",
+    "user": "管理员"
+  }
+}
