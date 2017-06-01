@@ -3,6 +3,7 @@ import { NgbDropdownConfig } from '@ng-bootstrap/ng-bootstrap';
 import { MenuItems } from 'app/shared/menu-items/menu-items';
 
 import { TranslateService } from '@ngx-translate/core';
+import { AppConfig } from "app/app.config";
 
 @Component({
   selector: 'app-navbar',
@@ -12,16 +13,23 @@ import { TranslateService } from '@ngx-translate/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(config: NgbDropdownConfig, public menuItems: MenuItems, private translate: TranslateService) {
+  isCollapsed;
+
+  constructor(config: NgbDropdownConfig, public menuItems: MenuItems, private translate: TranslateService, private appConfig: AppConfig) {
     config.up = false;
     config.autoClose = true;
+    this.isCollapsed = true;
   }
 
   ngOnInit() {
   }
 
-  change(lng) {
+  changeLanguage(lng) {
     this.translate.use(lng);
+  }
+
+  changeTheme(theme) {
+    this.appConfig.changeTheme(theme);
   }
 
 }

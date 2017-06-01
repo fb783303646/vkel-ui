@@ -1,0 +1,5 @@
+@import 'base';
+$colors: ( primary: #FFBA08, secondary: #ffcc46, light: #ffffff);
+.theme-bing {
+    @include theme-styles($colors);
+}
