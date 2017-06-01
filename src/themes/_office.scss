@@ -1,0 +1,5 @@
+@import 'base';
+$colors: ( primary: #F35325, secondary: #f97e5b, light: #ffffff);
+.theme-office {
+    @include theme-styles($colors);
+}

@@ -1,0 +1,5 @@
+@import 'base';
+$colors: ( primary: #05A6F0, secondary: #42bcf8, light: #ffffff);
+.theme-windows {
+    @include theme-styles($colors);
+}

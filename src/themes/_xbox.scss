@@ -1,0 +1,5 @@
+@import 'base';
+$colors: ( primary: #81BC06, secondary: #aade3d, light: #ffffff);
+.theme-xbox {
+    @include theme-styles($colors);
+}
