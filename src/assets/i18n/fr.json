@@ -8,7 +8,15 @@
       "title": "À propos",
       "content": "Sur la page fonctionne!"
     },
-    "gloab": "Langues",
+    "login": {
+      "title": "Se connecter",
+      "heading":"Connectez-vous s'il vous plaît",
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "remember": "Se souvenir de moi",
+      "loginButton": "Se connecter"
+    },
+    "global": "Langues",
     "skin": "Thèmes",
     "user": "Administrateur"
   }

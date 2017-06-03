@@ -8,7 +8,15 @@
       "title": "関連",
       "content": "関連ページが動作します！"
     },
-    "gloab": "言語",
+    "login": {
+      "title": "ログイン",
+      "heading":"ログインしてください",
+      "username": "ユーザー名",
+      "password": "パスワード",
+      "remember": "私を忘れないでください",
+      "loginButton": "サインイン"
+    },
+    "global": "言語",
     "skin": "テーマ",
     "user": "管理者"
   }
