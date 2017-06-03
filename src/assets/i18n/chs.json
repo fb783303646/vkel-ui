@@ -8,7 +8,15 @@
       "title": "关于",
       "content": "关于页工作了！"
     },
-    "gloab": "语言",
+    "login": {
+      "title": "登录",
+      "heading": "请登录",
+      "username": "用户名",
+      "password": "密码",
+      "remember": "记住我的登录状态",
+      "loginButton": "登录"
+    },
+    "global": "语言",
     "skin": "主题",
     "user": "管理员"
   }

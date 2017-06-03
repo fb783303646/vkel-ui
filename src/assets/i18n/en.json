@@ -6,9 +6,17 @@
     },
     "about": {
       "title": "About",
-      "content": "about page works!"
+      "content": "About page works!"
     },
-    "gloab": "Languages",
+    "login": {
+      "title": "Login",
+      "heading":"Please sign in",
+      "username": "Username",
+      "password": "Password",
+      "remember": "Remember me",
+      "loginButton": "Sign in"
+    },
+    "global": "Languages",
     "skin": "Themes",
     "user": "Admin"
   }

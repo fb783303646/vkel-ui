@@ -7,10 +7,10 @@
     <a class="navbar-brand" [routerLink]="'/'">Vkel UI</a>
     <div class="navbar-collapse" [ngbCollapse]="isCollapsed">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="authService.authenticated()">
           <a class="nav-link" [routerLink]="'/home'" routerLinkActive="active">{{ 'app.home.title' | translate }}</a>
         </li>
-        <li class="nav-item">
+        <li class="nav-item" *ngIf="authService.authenticated()">
           <a class="nav-link" [routerLink]="'/about'" routerLinkActive="active">{{ 'app.about.title' | translate }}</a>
         </li>
       </ul>
@@ -18,7 +18,7 @@
         <div ngbDropdown>
           <button class="btn btn-link" id="dropdownConfig" ngbDropdownToggle>
             <i class="fa fa-globe" aria-hidden="true"></i>
-            {{ 'app.gloab' | translate }}
+            {{ 'app.global' | translate }}
             </button>
           <div class="dropdown-menu" aria-labelledby="dropdownConfig">
             <button class="dropdown-item" (click)="changeLanguage('chs')">中文</button>
@@ -36,14 +36,17 @@
             <button class="dropdown-item" (click)="changeTheme('bing')">Bing</button>
           </div>
         </div>
-        <div ngbDropdown>
-          <button class="btn btn-link" id="dropdownConfig" ngbDropdownToggle>{{ 'app.user' | translate }}</button>
+        <div ngbDropdown *ngIf="authService.authenticated()">
+          <button class="btn btn-link" id="dropdownConfig" ngbDropdownToggle>{{authService.getUser().realname}}</button>
           <div class="dropdown-menu" aria-labelledby="dropdownConfig">
             <button class="dropdown-item">Profiles</button>
             <button class="dropdown-item">Settings</button>
             <button class="dropdown-item">Security</button>
-            <button class="dropdown-item">Logout</button>
+            <button class="dropdown-item" (click)="logout()">Logout</button>
           </div>
+        </div>
+        <div class="nav-item" *ngIf="!authService.authenticated()">
+          <a class="nav-link" [routerLink]="'/login'" routerLinkActive="active">{{'app.login.title' | translate}}</a>
         </div>
       </div>
     </div>
