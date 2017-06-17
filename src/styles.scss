@@ -1,12 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+/* 
+ * Global Styles 
+ */
 
 // bootstrap
-@import '../node_modules/bootstrap/scss/bootstrap';
+@import '../node_modules/bootstrap/dist/css/bootstrap.css';
+// ionicons
+@import '../node_modules/ionicons/css/ionicons.css';
 // font-awesome
-$fa-font-path: "../node_modules/font-awesome/fonts";
-@import "../node_modules/font-awesome/scss/font-awesome";
-// themes
-@import './themes/windows';
-@import './themes/office';
-@import './themes/xbox';
-@import './themes/bing';
+// $fa-font-path: "../node_modules/font-awesome/fonts";
+// @import "../node_modules/font-awesome/scss/font-awesome";
+@import '../node_modules/font-awesome/css/font-awesome.css';
+// others
+@import '../node_modules/summernote/dist/summernote.css';
+@import '../node_modules/material-colors/dist/colors.css';
+@import '../node_modules/loaders.css/loaders.css';
+@import '../node_modules/sweetalert/dist/sweetalert.css';
+@import '../node_modules/ng-material-floating-button/mfb/dist/mfb.css';
+@import '../node_modules/blueimp-gallery/css/blueimp-gallery.min.css';

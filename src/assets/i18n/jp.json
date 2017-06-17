@@ -8,6 +8,10 @@
       "title": "関連",
       "content": "関連ページが動作します！"
     },
+    "maps": {
+      "title": "マップ",
+      "content": "マップページが動作します！"
+    },
     "login": {
       "title": "ログイン",
       "heading":"ログインしてください",
@@ -16,7 +20,7 @@
       "remember": "私を忘れないでください",
       "loginButton": "サインイン"
     },
-    "global": "言語",
+    "global": "あア",
     "skin": "テーマ",
     "user": "管理者"
   }

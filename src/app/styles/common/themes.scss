@@ -1,0 +1,58 @@
+/**
+ * Themes
+ */
+
+@import './variables';
+@import './mixins';
+.theme-1 {
+  @include theme-sidebar(#fff, $text-color, $mdc-blue-700, #fff);
+  @include theme-header($mdc-blue-700, #fff);
+}
+
+.theme-2 {
+  @include theme-sidebar($mdc-blue-grey-900, #fff, $mdc-blue-grey-900, #fff);
+  @include theme-header($mdc-blue-700, #fff);
+  @include theme-content($mdc-blue-grey-50);
+}
+
+.theme-3 {
+  @include theme-sidebar($mdc-blue-grey-900, #fff, $mdc-blue-grey-900, #fff);
+  @include theme-header($mdc-blue-grey-800, #fff);
+  @include theme-content-dark($mdc-blue-grey-800);
+  @include theme-sidebar-items($brand-primary, $brand-success);
+}
+
+.theme-4 {
+  @include theme-sidebar(#fff, $text-color, $brand-success, #fff);
+  @include theme-header($brand-success, #fff);
+  @include theme-content($gray-lighter);
+  @include theme-sidebar-items($brand-success, lighten($brand-success, 25%));
+}
+
+.theme-5 {
+  @include theme-sidebar(#fff, $text-color, $brand-info, #fff);
+  @include theme-header($brand-info, #fff);
+  @include theme-content($gray-lighter);
+  @include theme-sidebar-items($brand-info, lighten($brand-info, 25%));
+}
+
+// Theme previews for settings panel
+.preview-theme-1 {
+  @include preview-theme($mdc-blue-700, #fff, #f1f2f3);
+}
+
+.preview-theme-2 {
+  @include preview-theme($mdc-blue-700, $mdc-blue-grey-900, $mdc-blue-grey-50);
+}
+
+.preview-theme-3 {
+  @include preview-theme($mdc-blue-grey-800, $mdc-blue-grey-900, $mdc-blue-grey-800);
+}
+
+.preview-theme-4 {
+  @include preview-theme($brand-success, #fff, $gray-lighter);
+}
+
+.preview-theme-5 {
+  @include preview-theme($brand-info, #fff, $gray-lighter);
+}
