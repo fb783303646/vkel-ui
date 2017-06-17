@@ -1,17 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-import { AuthService } from 'app/services/auth.service';
-import { Router } from "@angular/router";
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../../services/auth/auth.service';
+import { TranslatorService } from "app/services/translator/translator.service";
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
-  styleUrls: ['./login.component.scss']
+  styleUrls: ['./login.component.scss'],
+  encapsulation: ViewEncapsulation.None
 })
 export class LoginComponent implements OnInit {
 
   userToLogin: { username: string; password: string };
 
-  constructor(private authService: AuthService, private router: Router) {
+  constructor(private router: Router, public authService: AuthService, private translator: TranslatorService) {
     this.userToLogin = { username: null, password: null };
   }
 

@@ -8,6 +8,10 @@
       "title": "关于",
       "content": "关于页工作了！"
     },
+    "maps": {
+      "title": "地图",
+      "content": "地图页工作了！"
+    },
     "login": {
       "title": "登录",
       "heading": "请登录",
@@ -16,7 +20,7 @@
       "remember": "记住我的登录状态",
       "loginButton": "登录"
     },
-    "global": "语言",
+    "global": "汉",
     "skin": "主题",
     "user": "管理员"
   }

@@ -8,6 +8,10 @@
       "title": "À propos",
       "content": "Sur la page fonctionne!"
     },
+    "maps": {
+      "title": "Carte",
+      "content": "Carte page fonctionne!"
+    },
     "login": {
       "title": "Se connecter",
       "heading":"Connectez-vous s'il vous plaît",
@@ -16,7 +20,7 @@
       "remember": "Se souvenir de moi",
       "loginButton": "Se connecter"
     },
-    "global": "Langues",
+    "global": "Fr",
     "skin": "Thèmes",
     "user": "Administrateur"
   }

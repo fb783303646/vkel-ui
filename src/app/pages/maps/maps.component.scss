@@ -1,0 +1,14 @@
+/**
+ * Maps Page
+ */
+
+@import '../../styles/common/variables';
+@import '../../styles/common/mixins';
+app-maps {
+  #map {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+}
