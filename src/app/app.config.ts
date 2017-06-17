@@ -32,6 +32,5 @@ export class AppConfig {
         this.currentTheme = 'theme-windows';
         break;
     }
-    console.log(this.currentTheme);
   }
 }

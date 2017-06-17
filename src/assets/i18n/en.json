@@ -8,6 +8,10 @@
       "title": "About",
       "content": "About page works!"
     },
+    "maps": {
+      "title": "Maps",
+      "content": "Maps page works!"
+    },
     "login": {
       "title": "Login",
       "heading":"Please sign in",
@@ -16,7 +20,7 @@
       "remember": "Remember me",
       "loginButton": "Sign in"
     },
-    "global": "Languages",
+    "global": "En",
     "skin": "Themes",
     "user": "Admin"
   }
