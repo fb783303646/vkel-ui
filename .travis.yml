@@ -14,7 +14,7 @@ before_script:
   # - npm install -g karma
 
 script:
-  - ng build --prod --base-href "/vkel-ui/"
+  - ng build --prod --base-href "./vkel-ui/"
 
 after_success:
   - cd ./dist
