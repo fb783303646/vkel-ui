@@ -1,0 +1,9 @@
+
+  <h5>
+    Basic</h5>
+  <input id="in" type="text" size="30" pInputText [(ngModel)]="text"> {{text}}
+
+  <h5>Disabled</h5>
+  <input id="in" type="text" size="30" pInputText [disabled]="disabled" />
+
+  <button type="button" (click)="toggleDisabled()" pButton label="Toggle"></button>

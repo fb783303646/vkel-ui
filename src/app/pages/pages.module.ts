@@ -7,13 +7,18 @@ import { BsDropdownModule, CollapseModule, ModalModule } from 'ngx-bootstrap';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
+import {
+  InputTextModule, ButtonModule, DataTableModule, SharedModule, TreeModule
+} from 'primeng/primeng';
+
+import { routes } from './routes';
+import { InputsComponent } from './inputs/inputs.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { MapsComponent } from './maps/maps.component';
-import { routes } from './routes';
-import { GridComponent } from 'app/pages/grid/grid.component';
-import { ChartsComponent } from 'app/pages/charts/charts.component';
+import { ChartsComponent } from './charts/charts.component';
+import { DataComponent } from './data/data.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: Http) {
@@ -23,14 +28,22 @@ export function HttpLoaderFactory(http: Http) {
 export const PAGES_COMPONENTS = [
   HomeComponent,
   AboutComponent,
-  GridComponent,
+  InputsComponent,
   ChartsComponent,
   MapsComponent,
-  LoginComponent
+  LoginComponent,
+  DataComponent
 ];
 
 @NgModule({
   imports: [
+    // primeng
+    InputTextModule,
+    ButtonModule,
+    DataTableModule,
+    SharedModule,
+    TreeModule,
+    // others
     FormsModule,
     CommonModule,
     ReactiveFormsModule,

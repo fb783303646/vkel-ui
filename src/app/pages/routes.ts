@@ -1,3 +1,4 @@
+import { InputsComponent } from './inputs/inputs.component';
 import { ModuleWithProviders } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -6,7 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { MapsComponent } from './maps/maps.component';
-import { GridComponent } from './grid/grid.component';
+import { DataComponent } from './data/data.component';
 import { ChartsComponent } from './charts/charts.component';
 
 const APP_ROUTES: Routes = [
@@ -16,8 +17,8 @@ const APP_ROUTES: Routes = [
     children: [
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'home', component: HomeComponent, pathMatch: 'full' },
-      { path: 'about', component: AboutComponent },
-      { path: 'grid', component: GridComponent },
+      { path: 'inputs', component: InputsComponent },
+      { path: 'data', component: DataComponent },
       { path: 'charts', component: ChartsComponent },
       { path: 'maps', component: MapsComponent }]
   },

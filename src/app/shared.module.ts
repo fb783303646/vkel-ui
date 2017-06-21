@@ -72,7 +72,8 @@ import { BaseRequestOptions } from '@angular/http';
     TabsModule,
     TimepickerModule,
     TooltipModule,
-    TypeaheadModule
+    TypeaheadModule,
+
   ]
 })
 
