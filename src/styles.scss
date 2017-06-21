@@ -1,9 +1,12 @@
-/* 
- * Global Styles 
+/*
+ * Global Styles
  */
 
 // bootstrap
 @import '../node_modules/bootstrap/dist/css/bootstrap.css';
+// primeng
+@import '../node_modules/primeng/resources/primeng.css';
+@import '../node_modules/primeng/resources/themes/bootstrap/theme.css';
 // ionicons
 @import '../node_modules/ionicons/css/ionicons.css';
 // font-awesome

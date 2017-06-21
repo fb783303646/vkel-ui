@@ -1,7 +1,9 @@
 /**
- * Grid Page
- */
+* Inputs Page
+*/
 
 @import '../../styles/common/variables';
 @import '../../styles/common/mixins';
-app-grid {}
+:host {
+  padding:   10px;
+}
