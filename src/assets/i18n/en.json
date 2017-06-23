@@ -1,0 +1,42 @@
+{
+  "app": {
+    "home": {
+      "title": "Home",
+      "content": "home page works!"
+    },
+    "about": {
+      "title": "About",
+      "content": "About page works!"
+    },
+    "inputs":{
+      "title":"Inputs"
+    },
+    "data":{
+      "title":"Data",
+      "tables": {
+        "title": "Tables"
+      },
+      "trees": {
+        "title": "Trees"
+      }
+    },
+    "charts":{
+      "title":"Charts"
+    },
+    "maps": {
+      "title": "Maps",
+      "content": "Maps page works!"
+    },
+    "login": {
+      "title": "Login",
+      "heading":"Please sign in",
+      "username": "Username",
+      "password": "Password",
+      "remember": "Remember me",
+      "loginButton": "Sign in"
+    },
+    "global": "En",
+    "skin": "Themes",
+    "user": "Admin"
+  }
+}

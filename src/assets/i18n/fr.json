@@ -1,0 +1,42 @@
+{
+  "app": {
+    "home": {
+      "title": "Accueil",
+      "content": "La page d'accueil fonctionne!"
+    },
+    "about": {
+      "title": "À propos",
+      "content": "Sur la page fonctionne!"
+    },
+    "inputs":{
+      "title":"Entrées"
+    },
+    "data":{
+      "title":"Données",
+      "tables": {
+        "title": "Tables"
+      },
+      "trees": {
+        "title": "Arbres"
+      }
+    },
+    "charts":{
+      "title":"Graphiques"
+    },
+    "maps": {
+      "title": "Carte",
+      "content": "Carte page fonctionne!"
+    },
+    "login": {
+      "title": "Se connecter",
+      "heading":"Connectez-vous s'il vous plaît",
+      "username": "Nom d'utilisateur",
+      "password": "Mot de passe",
+      "remember": "Se souvenir de moi",
+      "loginButton": "Se connecter"
+    },
+    "global": "Fr",
+    "skin": "Thèmes",
+    "user": "Administrateur"
+  }
+}

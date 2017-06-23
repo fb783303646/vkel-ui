@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div class="form-login">
+    <h2 class="form-login-heading">{{'app.login.heading' | translate}}</h2>
+    <label for="inputUsername" class="sr-only">{{'app.login.username' | translate}}</label>
+    <input type="text" id="inputUsername" class="form-control" placeholder="{{'app.login.username' | translate}}" required="required" autofocus="true" [(ngModel)]="userToLogin.username">
+    <label for="inputPassword" class="sr-only">{{'app.login.password' | translate}}</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="{{'app.login.password' | translate}}" required="required" [(ngModel)]="userToLogin.password">
+    <div class="checkbox">
+      <label> 
+        <input type="checkbox" value="remember-me">{{'app.login.remember' | translate}}</label>
+    </div>
+    <button class="btn btn-lg btn-primary btn-block" type="button" (click)="login()">{{'app.login.loginButton' | translate}}</button>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<section id="buttons">
+  <div class="btn-group padding">
+    <button type="button" class="btn btn-default btn-raised" (click)="addDrawType(draw.Point)">点</button>
+    <button type="button" class="btn btn-default btn-raised" (click)="addDrawType(draw.LineString)">折线</button>
+    <button type="button" class="btn btn-default btn-raised" (click)="addDrawType(draw.LineString)">自由线</button>
+    <button type="button" class="btn btn-default btn-raised" (click)="addDrawType(draw.Circle)">圆</button>
+    <button type="button" class="btn btn-default btn-raised" (click)="addDrawType(draw.Polygon)">多边形</button>
+  </div>
+  <span id="points"></span>
+  <div dropdown class="btn-group pull-right">
+    <button type="button" dropdownToggle class="btn btn-default btn-block btn-raised">
+          选择地图
+          <span class="caret"></span>
+          </button>
+    <ul *dropdownMenu role="menu" class="dropdown-menu animated short fadeInUpShort">
+      <li>
+        <a (click)="select('GGC')">谷歌中国</a>
+      </li>
+      <li>
+        <a (click)="select('BD')">百度地图</a>
+      </li>
+      <li>
+        <a (click)="select('ALI')">高德地图</a>
+      </li>
+      <li>
+        <a (click)="select('TD')">天地图</a>
+      </li>
+      <li>
+        <a (click)="select('BING')">微软Bing地图</a>
+      </li>
+      <li>
+        <a (click)="select('OSM')">OSM地图</a>
+      </li>
+    </ul>
+  </div>
+</section>
+<section id="maps">
+  <div id="map"></div>
+</section>

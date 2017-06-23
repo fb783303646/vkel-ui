@@ -1,0 +1,42 @@
+{
+  "app": {
+    "home": {
+      "title": "首页",
+      "content": "首页工作了！"
+    },
+    "about": {
+      "title": "关于",
+      "content": "关于页工作了！"
+    },
+    "inputs": {
+      "title": "输入框"
+    },
+    "data": {
+      "title": "数据",
+      "tables": {
+        "title": "表格"
+      },
+      "trees": {
+        "title": "树"
+      }
+    },
+    "charts": {
+      "title": "图表"
+    },
+    "maps": {
+      "title": "地图",
+      "content": "地图页工作了！"
+    },
+    "login": {
+      "title": "登录",
+      "heading": "请登录",
+      "username": "用户名",
+      "password": "密码",
+      "remember": "记住我的登录状态",
+      "loginButton": "登录"
+    },
+    "global": "汉",
+    "skin": "主题",
+    "user": "管理员"
+  }
+}

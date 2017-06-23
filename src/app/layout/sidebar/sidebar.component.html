@@ -1,0 +1,83 @@
+<div class="sidebar-container">
+  <div *ngIf="settings.app.sidebar.showheader" class="sidebar-header">
+    <div (click)="closeSidebar()" class="pull-right pt-lg text-muted visible-xs-visible-sm hidden">
+      <em class="ion-close-round"></em>
+    </div>
+    <a class="sidebar-header-logo">
+      <img src="assets/img/logo.svg" svgreplace/>
+      <span class="sidebar-header-logo-text">Vkel UI</span>
+    </a>
+  </div>
+  <div class="sidebar-content">
+    <div *ngIf="settings.app.sidebar.showtoolbar" class="sidebar-toolbar text-center">
+      <a>
+        <img src="assets/img/user/01.jpg" alt="Profile" class="img-circle thumb64" />
+      </a>
+      <div class="mt">WELCOME, Admin</div>
+    </div>
+    <nav class="sidebar-nav">
+      <ul>
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="'/home'" class="ripple">
+            <span class="nav-icon" >
+            <em class="ion-home"></em>
+            </span>
+            <span class="pull-right nav-label">
+            <span class="badge bg-success">5</span>
+            </span>
+            <span >{{'app.home.title' | translate}}</span>
+          </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="'/inputs'" class="ripple">
+            <span class="nav-icon" >
+              <em class="ion-document-text"></em>
+            </span>
+            <span >{{'app.inputs.title' | translate}}</span>
+          </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a class="ripple" (click)="toggleSelect($event)">
+            <span  class="pull-right nav-caret">
+              <em class="ion-ios-arrow-right"></em>
+            </span>
+            <span class="nav-icon">
+            <em class="ion-grid"></em>
+            </span>
+            <span>{{'app.data.title' | translate}}</span>
+          </a>
+          <ul class="sidebar-subnav">
+            <li [routerLinkActive]="['active']">
+              <a [routerLink]="'/data/tables'" class="ripple">
+                <span class="pull-right nav-label"></span>
+                <span >{{'app.data.tables.title' | translate}}</span>
+              </a>
+            </li>
+            <li [routerLinkActive]="['active']">
+              <a [routerLink]="'/data/trees'" class="ripple">
+                <span class="pull-right nav-label"></span>
+                <span >{{'app.data.trees.title' | translate}}</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="'/charts'" class="ripple">
+            <span class="nav-icon" >
+            <em class="ion-stats-bars"></em>
+            </span>
+            <span >{{'app.charts.title' | translate}}</span>
+          </a>
+        </li>
+        <li [routerLinkActive]="['active']">
+          <a [routerLink]="'/maps'" class="ripple">
+            <span class="nav-icon" >
+            <em class="ion-map"></em>
+            </span>
+            <span >{{'app.maps.title' | translate}}</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
