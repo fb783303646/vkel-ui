@@ -11,10 +11,20 @@ import { TreeNode } from './../../../models/treenode';
 })
 export class TreesComponent implements OnInit {
   filesTree: TreeNode[];
+  selectedFile: TreeNode;
+
   constructor(private dataService: DataService) { }
 
   async ngOnInit() {
     this.filesTree = await this.dataService.getFilesTree();
+  }
+
+  nodeSelect(event) {
+    console.log(event);
+  }
+
+  nodeUnselect(event) {
+    console.log(event);
   }
 
 }
