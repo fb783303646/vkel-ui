@@ -18,11 +18,27 @@
         <a [routerLink]="'/home'" routerLinkActive="active">{{'app.home.title' | translate}}</a>
       </li>
       <li routerLinkActive="active">
-        <a [routerLink]="'/inputs'" routerLinkActive="active">Inputs</a></li>
+        <a [routerLink]="'/inputs'" routerLinkActive="active">{{'app.inputs.title' | translate}}</a></li>
+
+      <li dropdown class="dropdown">
+        <a dropdownToggle class="dropdown-toggle has-badge ripple">
+          {{'app.data.title' | translate}}
+            <span class="pull-right">
+              <em class="ion-android-arrow-dropdown"></em>
+            </span>
+        </a>
+        <ul *dropdownMenu class="dropdown-menu dropdown-menu-right md-dropdown-menu">
+          <li class="ripple ripple-block">
+            <a [routerLink]="'/data/tables'">{{'app.data.tables.title' | translate}}</a>
+          </li>
+          <li class="ripple ripple-block">
+            <a [routerLink]="'/data/trees'">{{'app.data.trees.title' | translate}}</a>
+          </li>
+        </ul>
+      </li>
       <li routerLinkActive="active">
-        <a [routerLink]="'/data'" routerLinkActive="active">Data</a></li>
-      <li routerLinkActive="active">
-        <a [routerLink]="'/charts'" routerLinkActive="active">Charts</a></li>
+        <a [routerLink]="'/charts'" routerLinkActive="active">
+        {{'app.charts.title' | translate}}</a></li>
       <li routerLinkActive="active">
         <a [routerLink]="'/maps'" routerLinkActive="active">{{'app.maps.title' | translate}}</a></li>
     </ul>

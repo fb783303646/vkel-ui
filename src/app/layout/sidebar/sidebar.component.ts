@@ -1,6 +1,5 @@
-import { Component, OnInit, Injector, ViewEncapsulation } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-// declare var $: any;
+import { Component, Injector, OnInit, ViewEncapsulation } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 import { SettingsService } from '../settings/settings.service';
 
@@ -33,27 +32,13 @@ export class SidebarComponent implements OnInit {
     this.settings.app.sidebar.visible = false;
   }
 
-  handleSidebar(event) {
-    // let item = this.getItemElement(event);
-
-    // if (!item) return;
-
-    // let ele = $(item),
-    //   liparent = ele.parent()[0];
-
-    // let lis = ele.parent().parent().children();
-
-    // lis.find('li').removeClass('active');
-
-    // $.each(lis, function (key, li) {
-    //   if (li !== liparent)
-    //     $(li).removeClass('active');
-    // });
-    // let next = ele.next();
-    // if (next.length && next[0].tagName === 'UL') {
-    //   ele.parent().toggleClass('active');
-    //   event.preventDefault();
-    // }
+  toggleSelect(event) {
+    const item = this.getItemElement(event).parentNode;
+    if (item.classList.contains('active')) {
+      item.classList.remove('active');
+    } else {
+      item.classList.add('active');
+    }
   }
 
   getItemElement(event) {

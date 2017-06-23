@@ -8,6 +8,21 @@
       "title": "À propos",
       "content": "Sur la page fonctionne!"
     },
+    "inputs":{
+      "title":"Entrées"
+    },
+    "data":{
+      "title":"Données",
+      "tables": {
+        "title": "Tables"
+      },
+      "trees": {
+        "title": "Arbres"
+      }
+    },
+    "charts":{
+      "title":"Graphiques"
+    },
     "maps": {
       "title": "Carte",
       "content": "Carte page fonctionne!"
