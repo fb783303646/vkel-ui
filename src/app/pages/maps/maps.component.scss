@@ -5,10 +5,22 @@
 @import '../../styles/common/variables';
 @import '../../styles/common/mixins';
 app-maps {
-  #map {
-    display: block;
+  #buttons {
+    left: 0;
+    right: 0;
     position: absolute;
-    width: 100%;
+    z-index: 999;
+    background-color: $mdc-white-dark;
+    .btn-group>button {
+      margin-right: 2px;
+    }
+  }
+  #maps {
     height: 100%;
+    #map {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
   }
 }

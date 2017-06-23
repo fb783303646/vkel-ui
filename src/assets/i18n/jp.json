@@ -8,6 +8,21 @@
       "title": "関連",
       "content": "関連ページが動作します！"
     },
+    "inputs":{
+      "title":"入力"
+    },
+    "data":{
+      "title":"データ",
+      "tables": {
+        "title": "テーブル"
+      },
+      "trees": {
+        "title": "木"
+      }
+    },
+    "charts":{
+      "title":"グラフィックス"
+    },
     "maps": {
       "title": "マップ",
       "content": "マップページが動作します！"

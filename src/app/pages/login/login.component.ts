@@ -1,7 +1,8 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
-import { Router } from '@angular/router';
+
 import { AuthService } from '../../services/auth/auth.service';
-import { TranslatorService } from "app/services/translator/translator.service";
+import { Router } from '@angular/router';
+import { TranslatorService } from '../../services/translator/translator.service';
 
 @Component({
   selector: 'app-login',
