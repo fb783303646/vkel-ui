@@ -8,6 +8,21 @@
       "title": "关于",
       "content": "关于页工作了！"
     },
+    "inputs": {
+      "title": "输入框"
+    },
+    "data": {
+      "title": "数据",
+      "tables": {
+        "title": "表格"
+      },
+      "trees": {
+        "title": "树"
+      }
+    },
+    "charts": {
+      "title": "图表"
+    },
     "maps": {
       "title": "地图",
       "content": "地图页工作了！"

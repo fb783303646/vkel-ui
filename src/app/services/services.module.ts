@@ -1,10 +1,10 @@
 import { NgModule, Optional, SkipSelf } from '@angular/core';
 
 import { AuthService } from './auth/auth.service';
+import { ColorsService } from './colors/colors.service';
+import { DataService } from './data/data.service';
 import { PagetitleService } from './pagetitle/pagetitle.service';
 import { TranslatorService } from './translator/translator.service';
-import { ColorsService } from './colors/colors.service';
-
 import { throwIfAlreadyLoaded } from './module-import-guard';
 
 @NgModule({
@@ -15,7 +15,8 @@ import { throwIfAlreadyLoaded } from './module-import-guard';
     AuthService,
     ColorsService,
     PagetitleService,
-    TranslatorService
+    TranslatorService,
+    DataService
   ]
 })
 export class ServicesModule {
